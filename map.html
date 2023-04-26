@@ -1,0 +1,33 @@
+<script type="text/javascript" src="//dapi.kakao.com/v2/maps/sdk.js?appkey=931da7b206d67a242868b50c2881f681"></script>
+<script>
+    function getParameter(name) {
+        name = name.replace(/[\[]/, "\\[").replace(/[\]]/, "\\]");
+        var regex = new RegExp("[\\?&]" + name + "=([^&#]*)"),
+            results = regex.exec(location.search);
+        return results === null ? "" : decodeURIComponent(results[1].replace(/\+/g, " "));
+    }
+
+    var mapx = getParameter("mapx");
+    var mapy = getParameter("mapy");
+    var mlevel = getParameter("mlevel");
+</script>
+<div id="tistoryKakaoMapDiv" style="width:400px;height:300px;"></div>
+
+
+<script>
+    var container = document.getElementById('tistoryKakaoMapDiv');
+    var options = {
+        center: new kakao.maps.LatLng(mapy, mapx),
+        level: mlevel
+    };
+
+    var map = new kakao.maps.Map(container, options);
+    
+    var markerPosition  = new kakao.maps.LatLng(mapy, mapx); 
+    
+    var marker = new kakao.maps.Marker({
+        position: markerPosition
+    });
+    
+    marker.setMap(map);
+</script>
