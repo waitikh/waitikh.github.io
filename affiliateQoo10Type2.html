@@ -1,99 +1,53 @@
-<!doctype html>
 <html lang="ko">
 <head>
-    <meta charset="utf-8" />
-    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no" />
-    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
-    <meta http-equiv="Permissions-Policy" content="interest-cohort=()">
-    <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
 	<script type="text/javascript" src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.min.js"></script>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick.css"/>
 	<link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.8.1/slick-theme.css"/>
-
-	<!--
-	<script src="https://code.jquery.com/jquery-3.4.1.min.js/jquery-3.4.1.min.js"></script>
-	<script type="text/JavaScript" src="http://www.alguzip.com/js/slick/slick.min.js"></script>
-	<link rel="stylesheet" type="text/css" href="http://www.alguzip.com/js/slick/slick.css"/>
-	<link rel="stylesheet" type="text/css" href="http://www.alguzip.com/js/slick/slick-theme.css"/>
-	 -->
 </head>
+<body>
 
-
- <script type="text/javascript">
- <!--
- 
-    $(document).ready(function(){
-		$.ajax({
-			url: "http://www.alguzip.com/affiliate/affiliateAjax.do?affiliate=qoo10&type=type2",
-			//url: "http://localhost:8081/affiliate/affiliateAjax.do?affiliate=qoo10&type=type2",
-			type: "POST", 
-					
-			success : function(data){			            
-				var affiliateTag = "";
-
-				var affiliate = data.affiliateItemEgovMapList;
-				
-				for(var i=0; i< affiliate.length; i++) {
-					affiliateTag += "<div style='width:120px;padding:0px 0px;'><a href='"+affiliate[i].link+"' target='_blank'><img src='"+affiliate[i].imgUrl+"' width='120px' alt='"+affiliate[i].alt+"' style='vertical-align: middle; border: 0 none;'></a></div>";
-				}
-				for(var i=0; i< affiliate.length; i++) {
-					affiliateTag += "<div style='width:120px;padding:0px 0px;'><a href='"+affiliate[i].link+"' target='_blank'><img src='"+affiliate[i].imgUrl+"' width='120px' alt='"+affiliate[i].alt+"' style='vertical-align: middle; border: 0 none;'></a></div>";
-				}
-
-				$("#slider-div").html(affiliateTag);
-
-				
-				$("#slider-div").slick({
-					slide: 'div',           //슬라이드 되어야 할 태그 ex) div, li 
-					infinite : true,        //무한 반복 옵션     
-					slidesToShow : 10,      //한 화면에 보여질 컨텐츠 개수
-					slidesToScroll : 1,     //스크롤 한번에 움직일 컨텐츠 개수
-					speed : 500,            //다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
-					arrows : true,          //옆으로 이동하는 화살표 표시 여부
-					//dots : true,          //스크롤바 아래 점으로 페이지네이션 여부
-					autoplay : true,        //자동 스크롤 사용 여부
-					autoplaySpeed : 2000,   //자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
-					pauseOnHover : true,    //슬라이드 이동    시 마우스 호버하면 슬라이더 멈추게 설정
-					vertical : false,       //세로 방향 슬라이드 옵션
-					prevArrow : "<button type='button' class='slick-prev'>Previous</button>",        // 이전 화살표 모양 설정
-					nextArrow : "<button type='button' class='slick-next'>Next</button>",        // 다음 화살표 모양 설정
-					//dotsClass : "slick-dots",     //아래 나오는 페이지네이션(점) css class 지정
-					draggable : true,     //드래그 가능 여부 
-				});
-			},
-			error :function(){
-				var affiliateTag = "<div style='width:1220px;height:0px'></div>";
-
-				$("#affiliateArea").html(affiliateTag);
-			}
-			
-		}); 
-    });
- //-->
- </script>
- <body>
-  
- </body>
-</html>
-
-<div id="affiliateArea">
-	<div style='width:1220px;height:120px'>
-		<div id='slider-div' class='slider'>
-		</div>
-	</div>
-</div>
-<!-- <div style="width:1220px;height:120px">
+<div style="width:1220px;height:120px">
     <div id="slider-div" class="slider">
-        <c:forEach var = "data" items="${resultMap.affiliateItemEgovMapList}" varStatus="i">
-            <div style="width:120px;padding:0px 0px;"><a href="${data.link}" target="_blank"><img src="${data.imgUrl}" width="120px" alt="${data.alt}" style="vertical-align: middle; border: 0 none;"></a></div>
-        </c:forEach>
-        <c:forEach var = "data" items="${resultMap.affiliateItemEgovMapList}" varStatus="i">
-            <div style="width:120px;padding:0px 0px;"><a href="${data.link}" target="_blank"><img src="${data.imgUrl}" width="120px" alt="${data.alt}" style="vertical-align: middle; border: 0 none;"></a></div>
-        </c:forEach>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/AWmz9S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/660/075/1749075660.g_520-w-st_g.jpg" width="120px" alt="미지아 선풍기 5세대                " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/AGka9S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/563/460/1749460563.g_520-w-st_g.jpg" width="120px" alt="샤오미 미밴드8                    " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/Afp19S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/197/552/1693552197.g_520-w-st_g.jpg" width="120px" alt="샤오미 미홀 1+1 역방향 3단 접이식 조명우" style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/Aqp19S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/503/617/1727617503.g_520-w-st_g.jpg" width="120px" alt="샤오미 미지아 제습기                " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/ARp19S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/209/978/1723978209.g_520-w-st_g.jpg" width="120px" alt="무선 선풍기                      " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/Axa2AS/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/931/815/1737815931.g_520-w-st_g.jpg" width="120px" alt="SOBERGO 스마트 창문 로봇 청소기 3세대 " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/AGq19S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/166/139/1450139166.g_520-w-st_g.jpg" width="120px" alt="SONGJING SJ-125E 제습기         " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/ASxP9S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/945/249/1735249945.g_520-w-st_g.jpg" width="120px" alt="구글 크롬캐스트 HD TV 스틱 리모컨     " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/AqN49S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/538/955/1748955538.g_520-w-st_g.jpg" width="120px" alt="네스트허브 2세대                   " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/A3r19S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/442/819/1748819442.g_520-w-st_g.jpg" width="120px" alt="야외 캠핑용 선풍기 DQ212버전         " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/AUr19S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/343/225/1746225343.g_520-w-st_g.jpg" width="120px" alt="QCY T13 ANC                   " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/AMNF9S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/545/996/1740996545.g_520-w-st_g.jpg" width="120px" alt="H2 QCY 무선헤드셋 이어폰           " style="vertical-align: middle; border: 0 none;"></a></div>
+		<div style="width:120px;padding:0px 0px;"><a href="https://qoo.tn/AC9W9S/Q129196444" target="_blank"><img src="https://gd.image-gmkt.com/li/271/218/1749218271.g_520-w-st_g.jpg" width="120px" alt="2023년 최신형 전기 모기채           " style="vertical-align: middle; border: 0 none;"></a></div>
     </div>
-</div> -->
+</div>
 
 <script type="text/javascript">
 <!--
+    
+    $("#slider-div").slick({
+        slide: 'div',           //슬라이드 되어야 할 태그 ex) div, li 
+        infinite : true,        //무한 반복 옵션     
+        slidesToShow : 10,      //한 화면에 보여질 컨텐츠 개수
+        slidesToScroll : 1,     //스크롤 한번에 움직일 컨텐츠 개수
+        speed : 500,            //다음 버튼 누르고 다음 화면 뜨는데까지 걸리는 시간(ms)
+        arrows : true,          //옆으로 이동하는 화살표 표시 여부
+        //dots : true,          //스크롤바 아래 점으로 페이지네이션 여부
+        autoplay : true,        //자동 스크롤 사용 여부
+        autoplaySpeed : 2000,   //자동 스크롤 시 다음으로 넘어가는데 걸리는 시간 (ms)
+        pauseOnHover : true,    //슬라이드 이동    시 마우스 호버하면 슬라이더 멈추게 설정
+        vertical : false,       //세로 방향 슬라이드 옵션
+        prevArrow : "<button type='button' class='slick-prev'>Previous</button>",        // 이전 화살표 모양 설정
+        nextArrow : "<button type='button' class='slick-next'>Next</button>",        // 다음 화살표 모양 설정
+        //dotsClass : "slick-dots",     //아래 나오는 페이지네이션(점) css class 지정
+        draggable : true,     //드래그 가능 여부 
+    });
 //-->
 </script>
+
+
+</body>
+</html>
